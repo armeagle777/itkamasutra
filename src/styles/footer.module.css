@@ -1,0 +1,6 @@
+.footer {
+  background: dimgrey;
+  grid-area: footer;
+  padding: 0 10px;
+  color: #fff;
+}

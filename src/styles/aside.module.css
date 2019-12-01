@@ -1,0 +1,10 @@
+.aside {
+  background: yellow;
+  grid-area: aside;
+  min-height: 200px;
+  padding-left: 10px;
+}
+.aside .nav {
+  display: flex;
+  flex-direction: column;
+}
