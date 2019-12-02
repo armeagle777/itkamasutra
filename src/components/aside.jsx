@@ -6,11 +6,21 @@ const Aside = () => {
   return (
     <aside className={classes.aside}>
       <nav className={classes.nav}>
-        <NavLink to="/profile">Profile</NavLink>
-        <NavLink to="/dialogs">Messages</NavLink>
-        <NavLink to="/news">News</NavLink>
-        <NavLink to="/music">Music</NavLink>
-        <NavLink to="/settings">Settings</NavLink>
+        <NavLink to="/profile" activeClassName={classes.activLink}>
+          Profile
+        </NavLink>
+        <NavLink to="/dialogs" activeClassName={classes.activLink}>
+          Messages
+        </NavLink>
+        <NavLink to="/news" activeClassName={classes.activLink}>
+          News
+        </NavLink>
+        <NavLink to="/music" activeClassName={classes.activLink}>
+          Music
+        </NavLink>
+        <NavLink to="/settings" activeClassName={classes.activLink}>
+          Settings
+        </NavLink>
       </nav>
     </aside>
   );
