@@ -1,3 +1,17 @@
-.dialog_image {
-  width: 200px;
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.dialogs_items {
+  padding: 10px;
+}
+.dialog {
+}
+.activedialog {
+  color: gold;
+}
+.messages {
+  padding: 10px;
+}
+.message {
 }
