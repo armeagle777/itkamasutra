@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import classes from "./app.module.css";
-import Header from "./components/header";
-import Aside from "./components/aside";
+import Header from "./components/Header/header";
+import Aside from "./components/Aside/aside";
 import Profile from "./components/profile";
 import News from "./components/news";
 import Music from "./components/music";
 import Settings from "./components/settings";
 import { BrowserRouter, Route } from "react-router-dom";
-import Footer from "./components/footer";
+import Footer from "./components/Footer/footer";
 import Dialogs from "./components/dialogs";
 
 class App extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import classes from "../styles/aside.module.css";
+import classes from "./aside.module.css";
 import { NavLink } from "react-router-dom";
 
 const Aside = () => {
