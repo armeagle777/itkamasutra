@@ -1,13 +1,18 @@
 import React, { Component } from "react";
-import classes from "../styles/myposts.module.css";
-import Post from "./post";
+import classes from "./myposts.module.css";
+import Post from "./Post/post";
 
 const Myposts = () => {
   return (
     <div>
-      MY posts
-      <textarea></textarea>
-      <button>Add post</button>
+      <p>My posts</p>
+      <div>
+        <textarea></textarea>
+      </div>
+      <div>
+        <button>Add post</button>
+      </div>
+
       <div className={classes.posts}>
         <Post message="Barev" />
         <Post message="vonc es?" />

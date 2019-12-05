@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import classes from "./app.module.css";
 import Header from "./components/Header/header";
 import Aside from "./components/Aside/aside";
-import Profile from "./components/profile";
-import News from "./components/news";
-import Music from "./components/music";
-import Settings from "./components/settings";
+import Profile from "./components/Profile/profile";
+import News from "./components/News/news";
+import Music from "./components/Music/music";
+import Settings from "./components/Setting/settings";
 import { BrowserRouter, Route } from "react-router-dom";
 import Footer from "./components/Footer/footer";
-import Dialogs from "./components/dialogs";
+import Dialogs from "./components/Dialogs/dialogs";
 
 class App extends Component {
   render() {

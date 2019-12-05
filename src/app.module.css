@@ -11,4 +11,5 @@
 .app_wrapper_content {
   background: #5e89ff;
   grid-area: main;
+  padding: 10px;
 }

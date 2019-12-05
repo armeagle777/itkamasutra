@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import classes from "../styles/post.module.css";
-import { tsConstructorType } from "@babel/types";
+import classes from "./post.module.css";
 
 const Post = props => {
   return (
