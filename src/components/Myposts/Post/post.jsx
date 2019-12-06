@@ -7,7 +7,7 @@ const Post = props => {
       <img src="https://apollodesign.nl/wp-content/uploads/2015/08/avatar-casper-tekening.png" />
       {props.message}
       <div>
-        <span>Like</span>
+        <span>{`Likes: ${props.likesCount}`}</span>
       </div>
     </div>
   );
