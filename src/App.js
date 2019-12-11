@@ -12,14 +12,29 @@ import Dialogs from "./components/Dialogs/dialogs";
 
 class App extends Component {
   render() {
+    let postData = [
+      { id: 1, post: "very good picture", likesCount: 17 },
+      { id: 2, post: "very good picture2", likesCount: 11 },
+      { id: 3, post: "very good picture3", likesCount: 27 }
+    ];
+    let dialogData = [
+      { id: 1, name: "Dima K" },
+      { id: 2, name: "Karina" },
+      { id: 3, name: "Masha" },
+      { id: 4, name: "Sasha" },
+      { id: 5, name: "Tanya" },
+      { id: 6, name: "Marina" }
+    ];
+    let profileComponent = pro => <Profile posts={postData} />;
+    let dialogsComponent = props => <Dialogs dialogs={dialogData} />;
     return (
       <BrowserRouter>
         <div className={classes.appwrapper}>
           <Header />
           <Aside />
           <div className={classes.app_wrapper_content}>
-            <Route path="/dialogs" component={Dialogs} />
-            <Route path="/profile" component={Profile} />
+            <Route path="/dialogs" render={dialogsComponent} />
+            <Route path="/profile" render={profileComponent} />
             <Route path="/news" component={News} />
             <Route path="/music" component={Music} />
             <Route path="/settings" component={Settings} />

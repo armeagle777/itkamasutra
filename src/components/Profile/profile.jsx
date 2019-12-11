@@ -4,12 +4,12 @@ import classes from "./profile.module.css";
 import Myposts from "../Myposts/myposts";
 import ProfileInfo from "./Profileinfo/profileinfo";
 
-const Profile = () => {
+const Profile = props => {
   return (
     <main className={classes.main}>
       <ProfileInfo />
 
-      <Myposts />
+      <Myposts posts={props.posts} />
     </main>
   );
 };
