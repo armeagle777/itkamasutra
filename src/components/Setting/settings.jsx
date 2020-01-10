@@ -7,9 +7,16 @@ class Settings extends Component {
     this.state = {};
   }
   render() {
+    let date = new Date();
     return (
-      <div className="classes.settings">
-        <h2>Adjust your settings</h2>
+      <div className={classes.settings}>
+        <h2 className={classes.htwo}>Date: {date.toDateString()}</h2>
+        <h2>
+          Time:
+          <span className={classes.date}>
+            {date.getHours()}:{date.getMinutes()}
+          </span>
+        </h2>
       </div>
     );
   }
